@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link rel="stylesheet" href="PERSONAL TRAINER.css">
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: lawngreen;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="ABOUT%20US.html">About</a></li>
+  <li><a href="CONTACT%20US.html">Contact Us</a></li>
+  <li><a href="GALLERY.html">Gallery</a></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Exercise</a>
+    <div class="dropdown-content">
+      <a href="ENDURANCE%20TRAINING.html">Endurance Training</a>
+      <a href="STRENGTH%20TRAINING.html">Strength Training</a>
+      <a href="STATIC%20STRETCHING.html">Static Stretching</a>
+         <a href="AEROBIC.html">Aerobic</a>
+      <a href="BALANCE%20TRAINING.html">Balance Training</a>
+      <a href="FLEXIBILITY.html">Flexibility</a>
+    </div>
+  </li>
+  <li><a href="DIET.html">Diet</a></li>
+  <li><a href="PERSONAL%20TRAINER.html">Personal Trainer</a></li>
+  <li><a href="SUCCESS%20STORIES.html">Success Stories</a></li>
+  <li><a href="COURSES.html">Courses</a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
+  <li><a href="LOCATION.html">Location</a></li>
+  <li><a href="SHOP.html">Shop</a></li>
+</ul>
+
+<section class="testimonials">
+ 	<div class="container">
+ 		<div class="title">
+ 		   <h1>PERSONAL TRAINER</h1>
+ 		</div>
+ 		<div class="slider">
+ 			<div class="slide active">
+ 				<p>" This gym is amazing. Amazing facility, top equipment and great environment. Good service with friendly staff and super clean and comfortable gym for everyone from beginners to professional athletes to train at. I will definitely be returning on my next trip to Samui.
+Has a crèche too, which is handy for those with young children. "</p>
+                <div class="client-info">
+                	<h3>Gourge Gam</h3>
+                	<span>Founder at Gikio</span>
+                </div>
+ 			</div>
+ 			<div class="slide active">
+ 				<p>" Good staff, great personal trainers! You got all the stuff you need for a perfect workout, good shakes, tasty meals low on calories avaible every day. Just an awesome gym in many different ways! :) "</p>
+                <div class="client-info">
+                	<h3>Pooja Singh</h3>
+                	<span>Founder at KrimSim</span>
+                </div>
+ 			</div>
+ 			<div class="slide active">
+ 				<p>" Really great and professional gym! With good machines and very kind and helpful Really great and professional gym! With good machines and very kind and helpful staff!
+Love the proteinshakes :)staff!
+Love the proteinshakes :) "</p>
+                <div class="client-info">
+                	<h3>Rinki Paul</h3>
+                	<span>Founder at Chamba</span>
+                </div>
+ 			</div>
+ 		</div>
+ 		<div class="slider-indicator">
+ 			<img src="image/client-01.png" class="active" alt="img" data-id="0" />
+ 			<img src="image/client-02.png" alt="img" data-id="1" />
+ 			<img src="image/client-03.png" alt="img" data-id="2" />
+ 		</div>
+ 	</div>
+ </section>
+ 
+
+<div class="footer">
+  <p>@copyright by kajal</p>
+</div>
+</body>
+</html>
