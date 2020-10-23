@@ -5,69 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="shop.css">
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
 
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: lawngreen;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-    .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
-}
-</style>
 </head>
-<body>
+<body style="background: url(image/gallery1.jpg);background-attachment: fixed">
 
 <ul>
   <li><a href="index.html">Home</a></li>
@@ -93,73 +33,124 @@ li.dropdown {
   <li><a href="LOCATION.html">Location</a></li>
   <li><a href="SHOP.html">Shop</a></li>
 </ul>
- <div class="container">
-        <div class="card">
-            <div class="shoeBackground">
-                <div class="gradients">
-                    <div class="gradient second" color="blue"></div>
-                    <div class="gradient" color="red"></div>
-                    <div class="gradient" color="green"></div>
-                    <div class="gradient" color="orange"></div>
-                    <div class="gradient" color="black"></div>
-                </div>
-                <h1 class="nike">nike</h1>
-                <img src="image/logo.png" alt="" class="logo">
-                
-
-                <img src="image/blue.png" alt="" class="shoe show" color="blue">
-                <img src="image/red.png" alt="" class="shoe" color="red">
-                <img src="image/green.png" alt="" class="shoe" color="green">
-                <img src="image/orange.png" alt="" class="shoe" color="orange">
-                <img src="image/black.png" alt="" class="shoe" color="black">
-
-            </div>
-            <div class="info">
-                <div class="shoeName">
-                    <div>
-                        <h1 class="big">Nike Zoom KD 12</h1>
-                        <span class="new">new</span>
-                    </div>
-                    <h3 class="small">Men's running shoes</h3>
-                </div>
-                <div class="description">
-                    <h3 class="title">Product Info</h3>
-                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
-                </div>
-                <div class="color-container">
-                    <h3 class="title">Color</h3>
-                    <div class="colors">
-                        <span class="color active" primary="#2175f5" color="blue"></span>
-                        <span class="color" primary="#f84848" color="red"></span>
-                        <span class="color" primary="#29b864" color="green"></span>
-                        <span class="color" primary="#ff5521" color="orange"></span>
-                        <span class="color" primary="#444" color="black"></span>
-                    </div>
-                </div>
-                <div class="size-container">
-                    <h3 class="title">size</h3>
-                    <div class="sizes">
-                        <span class="size">7</span>
-                        <span class="size">8</span>
-                        <span class="size active">9</span>
-                        <span class="size">10</span>
-                        <span class="size">11</span>
-                    </div>
-                </div>
-                <div class="buy-price">
-                    <a href="#" class="buy">Add to card</a>
-                    <div class="price">
-                       >
-                        <h1>$189.99</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+ 
+<figure class="snip1249">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample90.jpg" alt="sample90"/><i class="ion-ios-basketball-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Sports Wear</h3>
+    <p>How many boards would the Mongols hoard if the Mongol hordes got bored?</p>
+    <div class="price">
+      <s>$19.00</s>$14.00
     </div>
-    
-    
-
-
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249 hover">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85"/><i class="ion-ios-star-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Time Piece</h3>
+    <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+    <div class="price">
+      <s>$99.00</s>$84.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample71.jpg" alt="sample71"/><i class="ion-ios-camera-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Winter Hat</h3>
+    <p>Weekends don't count unless spent doing something completely pointless.</p>
+    <div class="price">
+      <s>$98.00</s>$74.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample90.jpg" alt="sample90"/><i class="ion-ios-basketball-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Sports Wear</h3>
+    <p>How many boards would the Mongols hoard if the Mongol hordes got bored?</p>
+    <div class="price">
+      <s>$19.00</s>$14.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249 hover">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85"/><i class="ion-ios-star-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Time Piece</h3>
+    <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+    <div class="price">
+      <s>$99.00</s>$84.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample71.jpg" alt="sample71"/><i class="ion-ios-camera-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Winter Hat</h3>
+    <p>Weekends don't count unless spent doing something completely pointless.</p>
+    <div class="price">
+      <s>$98.00</s>$74.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+    <figure class="snip1249">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample90.jpg" alt="sample90"/><i class="ion-ios-basketball-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Sports Wear</h3>
+    <p>How many boards would the Mongols hoard if the Mongol hordes got bored?</p>
+    <div class="price">
+      <s>$19.00</s>$14.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249 hover">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample85.jpg" alt="sample85"/><i class="ion-ios-star-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Time Piece</h3>
+    <p>I'm killing time while I wait for life to shower me with meaning and happiness.</p>
+    <div class="price">
+      <s>$99.00</s>$84.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
+<figure class="snip1249">
+  <div class="image">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample71.jpg" alt="sample71"/><i class="ion-ios-camera-outline"></i>
+  </div>
+  <figcaption>
+    <h3>Winter Hat</h3>
+    <p>Weekends don't count unless spent doing something completely pointless.</p>
+    <div class="price">
+      <s>$98.00</s>$74.00
+    </div>
+    <a href="#" class="add-to-cart">Add to Cart</a>
+  </figcaption>
+</figure>
 <footer class="footer-distributed" id="cont">
 
 			<div class="footer-left">
@@ -184,10 +175,10 @@ li.dropdown {
 
 				<div class="footer-icons">
 
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
+					<a href="#"></a>
 
 				</div>
 
@@ -212,67 +203,171 @@ li.dropdown {
    <span class="screen-reader-text"><img src="image/top1.png" width="90px" height="90px"></span>
 </a>
 </body>
-    <script>
-    const sizes = document.querySelectorAll('.size');
-const colors = document.querySelectorAll('.color');
-const shoes = document.querySelectorAll('.shoe');
-const gradients = document.querySelectorAll('.gradient');
-const shoeBg = document.querySelector('.shoeBackground');
-
-let prevColor = "blue";
-let animationEnd = true;
-
-function changeSize(){
-    sizes.forEach(size => size.classList.remove('active'));
-    this.classList.add('active');
+    <style>
+    /* Icon set - http://ionicons.com */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+figure.snip1249 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
-
-function changeColor(){
-    if(!animationEnd) return;
-    let primary = this.getAttribute('primary');
-    let color = this.getAttribute('color');
-    let shoe = document.querySelector(`.shoe[color="${color}"]`);
-    let gradient = document.querySelector(`.gradient[color="${color}"]`);
-    let prevGradient = document.querySelector(`.gradient[color="${prevColor}"]`);
-
-    if(color == prevColor) return;
-
-    colors.forEach(c => c.classList.remove('active'));
-    this.classList.add('active');
-
-    document.documentElement.style.setProperty('--primary', primary);
-    
-    shoes.forEach(s => s.classList.remove('show'));
-    shoe.classList.add('show');
-
-    gradients.forEach(g => g.classList.remove('first', 'second'));
-    gradient.classList.add('first');
-    prevGradient.classList.add('second');
-
-    prevColor = color;
-    animationEnd = false;
-
-    gradient.addEventListener('animationend', () => {
-        animationEnd = true;
-    })
+figure.snip1249 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
-
-sizes.forEach(size => size.addEventListener('click', changeSize));
-colors.forEach(c => c.addEventListener('click', changeColor));
-
-let x = window.matchMedia("(max-width: 1000px)");
-
-function changeHeight(){
-    if(x.matches){
-        let shoeHeight = shoes[0].offsetHeight;
-        shoeBg.style.height = `${shoeHeight * 0.9}px`;
+figure.snip1249 .image {
+  position: relative;
+}
+figure.snip1249 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+figure.snip1249 i {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  font-size: 32px;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+figure.snip1249 h3 {
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+figure.snip1249:before,
+figure.snip1249:after {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.snip1249:before {
+  background-color: #20638f;
+  -webkit-transform: skew(-45deg) translateX(-150%);
+  transform: skew(-45deg) translateX(-150%);
+  border-right: 1px solid #20638f;
+}
+figure.snip1249:after {
+  background-color: #962d22;
+  -webkit-transform: skew(-45deg) translateX(-175%);
+  transform: skew(-45deg) translateX(-175%);
+  border-right: 1px solid #962d22;
+}
+figure.snip1249 figcaption {
+  padding: 25px 80px 25px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  font-size: 0.9em;
+}
+figure.snip1249 figcaption p {
+  margin-bottom: 15px;
+}
+figure.snip1249 figcaption:before {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: '';
+  z-index: 1;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 100%);
+  background-color: #20638f;
+  -webkit-transform: skew(-45deg) translateX(50%);
+  transform: skew(-45deg) translateX(50%);
+  border-right: 1px solid #20638f;
+}
+figure.snip1249 .add-to-cart {
+  display: inline-block;
+  width: auto;
+  border: 2px solid #20638f;
+  padding: 0.4em 0.6em;
+  color: #20638f;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+figure.snip1249 .add-to-cart:hover {
+  background-color: #20638f;
+  color: #ffffff;
+}
+figure.snip1249 .price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #ffffff;
+  z-index: 2;
+  text-transform: uppercase;
+  padding: 20px;
+  font-weight: 800;
+  font-size: 1.2em;
+  text-align: center;
+}
+figure.snip1249 .price s {
+  display: block;
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.8;
+}
+figure.snip1249:hover i,
+figure.snip1249.hover i {
+  opacity: 0.7;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+figure.snip1249:hover h3,
+figure.snip1249.hover h3 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+figure.snip1249:hover:before,
+figure.snip1249.hover:before {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: skew(-45deg) translateX(-50%);
+  transform: skew(-45deg) translateX(-50%);
+}
+figure.snip1249:hover:after,
+figure.snip1249.hover:after {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-transform: skew(-45deg) translateX(-75%);
+  transform: skew(-45deg) translateX(-75%);
+}
+</style>
+    <script>  /* Demo purposes only */
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
     }
-    else{
-        shoeBg.style.height = "475px";
-    }
-}
-
-changeHeight();
-
-window.addEventListener('resize', changeHeight);</script>
+  );</script>
 </html>

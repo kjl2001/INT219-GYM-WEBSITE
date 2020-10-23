@@ -452,3 +452,34 @@ body {
 		clip: auto !important;
 	}
 }
+
+
+
+
+
+ #section-d .box {
+    padding: 2em;
+    color: #fff;
+  }
+
+  #section-d .box:first-child {
+    background:#2690d4;
+      color: white;
+  }
+          .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+      .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+ .parla{
+            background-image: url("image/gallery1.jpg");
+            min-height: 300px;
+            
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
