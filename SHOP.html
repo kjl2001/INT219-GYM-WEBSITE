@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="shop.css">
 <style>
 ul {
   list-style-type: none;
@@ -68,7 +72,7 @@ li.dropdown {
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="ABOUT%20US.html">About</a></li>
-  <li><a href="CONTACT%20US.html">Contact Us</a></li>
+  <li><a href="#cont">Contact Us</a></li>
   <li><a href="GALLERY.html">Gallery</a></li>
    <li class="dropdown">
     <a href="javascript:void(0)" class="dropbtn">Exercise</a>
@@ -89,11 +93,186 @@ li.dropdown {
   <li><a href="LOCATION.html">Location</a></li>
   <li><a href="SHOP.html">Shop</a></li>
 </ul>
+ <div class="container">
+        <div class="card">
+            <div class="shoeBackground">
+                <div class="gradients">
+                    <div class="gradient second" color="blue"></div>
+                    <div class="gradient" color="red"></div>
+                    <div class="gradient" color="green"></div>
+                    <div class="gradient" color="orange"></div>
+                    <div class="gradient" color="black"></div>
+                </div>
+                <h1 class="nike">nike</h1>
+                <img src="image/logo.png" alt="" class="logo">
+                
+
+                <img src="image/blue.png" alt="" class="shoe show" color="blue">
+                <img src="image/red.png" alt="" class="shoe" color="red">
+                <img src="image/green.png" alt="" class="shoe" color="green">
+                <img src="image/orange.png" alt="" class="shoe" color="orange">
+                <img src="image/black.png" alt="" class="shoe" color="black">
+
+            </div>
+            <div class="info">
+                <div class="shoeName">
+                    <div>
+                        <h1 class="big">Nike Zoom KD 12</h1>
+                        <span class="new">new</span>
+                    </div>
+                    <h3 class="small">Men's running shoes</h3>
+                </div>
+                <div class="description">
+                    <h3 class="title">Product Info</h3>
+                    <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                </div>
+                <div class="color-container">
+                    <h3 class="title">Color</h3>
+                    <div class="colors">
+                        <span class="color active" primary="#2175f5" color="blue"></span>
+                        <span class="color" primary="#f84848" color="red"></span>
+                        <span class="color" primary="#29b864" color="green"></span>
+                        <span class="color" primary="#ff5521" color="orange"></span>
+                        <span class="color" primary="#444" color="black"></span>
+                    </div>
+                </div>
+                <div class="size-container">
+                    <h3 class="title">size</h3>
+                    <div class="sizes">
+                        <span class="size">7</span>
+                        <span class="size">8</span>
+                        <span class="size active">9</span>
+                        <span class="size">10</span>
+                        <span class="size">11</span>
+                    </div>
+                </div>
+                <div class="buy-price">
+                    <a href="#" class="buy">Add to card</a>
+                    <div class="price">
+                       >
+                        <h1>$189.99</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 
 
+<footer class="footer-distributed" id="cont">
 
-<div class="footer">
-  <p>@copyright by kajal</p>
-</div>
+			<div class="footer-left">
+
+				<h3>Fitness<span>Edge</span></h3>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					·
+					<a href="DIET.html">Diet</a>
+					·
+					<a href="PERSONAL%20TRAINER.html">Personal Trainer</a>
+					·
+					<a href="ABOUT%20US.html">About</a>
+					·
+					<a href="FAQ.html">Faq</a>
+					·
+					<a href="#FOOTER">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Kajal  © 2020</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#FOOTER" method="post">
+
+					<input type="text" name="email" placeholder="Email" required>
+					<textarea name="message" placeholder="Message"></textarea>
+					<button style="margin-right: 100px;">Send</button>
+
+				</form>
+
+			</div>
+
+		</footer><a class="top-link hide" href="" id="js-top">
+ 
+   <span class="screen-reader-text"><img src="image/top1.png" width="90px" height="90px"></span>
+</a>
 </body>
+    <script>
+    const sizes = document.querySelectorAll('.size');
+const colors = document.querySelectorAll('.color');
+const shoes = document.querySelectorAll('.shoe');
+const gradients = document.querySelectorAll('.gradient');
+const shoeBg = document.querySelector('.shoeBackground');
+
+let prevColor = "blue";
+let animationEnd = true;
+
+function changeSize(){
+    sizes.forEach(size => size.classList.remove('active'));
+    this.classList.add('active');
+}
+
+function changeColor(){
+    if(!animationEnd) return;
+    let primary = this.getAttribute('primary');
+    let color = this.getAttribute('color');
+    let shoe = document.querySelector(`.shoe[color="${color}"]`);
+    let gradient = document.querySelector(`.gradient[color="${color}"]`);
+    let prevGradient = document.querySelector(`.gradient[color="${prevColor}"]`);
+
+    if(color == prevColor) return;
+
+    colors.forEach(c => c.classList.remove('active'));
+    this.classList.add('active');
+
+    document.documentElement.style.setProperty('--primary', primary);
+    
+    shoes.forEach(s => s.classList.remove('show'));
+    shoe.classList.add('show');
+
+    gradients.forEach(g => g.classList.remove('first', 'second'));
+    gradient.classList.add('first');
+    prevGradient.classList.add('second');
+
+    prevColor = color;
+    animationEnd = false;
+
+    gradient.addEventListener('animationend', () => {
+        animationEnd = true;
+    })
+}
+
+sizes.forEach(size => size.addEventListener('click', changeSize));
+colors.forEach(c => c.addEventListener('click', changeColor));
+
+let x = window.matchMedia("(max-width: 1000px)");
+
+function changeHeight(){
+    if(x.matches){
+        let shoeHeight = shoes[0].offsetHeight;
+        shoeBg.style.height = `${shoeHeight * 0.9}px`;
+    }
+    else{
+        shoeBg.style.height = "475px";
+    }
+}
+
+changeHeight();
+
+window.addEventListener('resize', changeHeight);</script>
 </html>
